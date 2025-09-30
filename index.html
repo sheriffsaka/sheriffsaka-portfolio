@@ -191,6 +191,24 @@
   <!-- PROJECTS -->
 <section id="projects" class="py-16">
   <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
+  <div class="relative w-full h-64 overflow-hidden">
+  <!-- Image with inline fallback logic -->
+  <img 
+    src="/images/feedyopage.png" 
+    alt="FeedYo Project Screenshot"
+    class="h-full w-full object-cover relative z-10"
+    onerror="
+      this.onerror=null;
+      this.style.display='block';
+      this.style.background='linear-gradient(to right, #9333ea, #ec4899, #ef4444)';
+      this.style.width='100%';
+      this.style.height='100%';
+      this.style.objectFit='cover';
+      this.src='';
+    "
+  />
+</div>
+
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     <!-- FeedYo -->
